@@ -12,12 +12,15 @@ def load_library(path)
   better_emoticons
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(path, meaning)
   # code goes here
-  emoticons = load_library
+  emoticons = load_library(path)
+  
 
 end
 
-def get_english_meaning
+def get_english_meaning(path, emoticon)
   # code goes here
+  emoticons = load_library(path)
+
 end
