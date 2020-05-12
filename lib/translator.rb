@@ -9,6 +9,7 @@ def load_library(path)
     better_emoticons[key][:english] = values[0]
     better_emoticons[key][:japanese] = values[1]
   }
+  better_emoticons
 end
 
 def get_japanese_emoticon
