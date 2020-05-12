@@ -12,10 +12,15 @@ def load_library(path)
   better_emoticons
 end
 
-def get_japanese_emoticon(path, meaning)
+def get_japanese_emoticon(path, emote)
   # code goes here
   emoticons = load_library(path)
-
+  emoticons.each {|key, values|
+    if values[:english] == emoticon
+      return key
+    end
+  }
+  "Sorry, that emoticon was not found"
 
 end
 
